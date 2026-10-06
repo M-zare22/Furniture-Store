@@ -1,0 +1,13 @@
+:root { font-family: Tahoma, Arial, sans-serif; color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+* { box-sizing: border-box; }
+img { display: block; max-width: 100%; }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #a96934; outline-offset: 4px; }
+.skip-link { position: fixed; top: -100px; right: 16px; z-index: 1500; padding: 12px 20px; background: white; color: #294d3e; }
+.skip-link:focus { top: 12px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
